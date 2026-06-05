@@ -7,12 +7,11 @@ pipeline {
     }
 
     stages {
-
         stage('Cloning Repository') {
             steps {
-                git 'https://github.com/amansah23/ETP.git'
-            }
-        }
+                git branch: 'main', url: 'https://github.com/amansah23/ETP.git'
+    }
+}
 
         stage('Build Docker Image') {
             steps {
