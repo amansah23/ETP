@@ -10,7 +10,7 @@ pipeline {
 
         stage('Cloning Repository') {
             steps {
-                git ''
+                git 'https://github.com/amansah23/ETP.git'
             }
         }
 
